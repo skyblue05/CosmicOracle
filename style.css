@@ -1,0 +1,342 @@
+/* basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-style: italic;
+}
+
+
+/* color of page, font color(linear gredient) and font weight */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bolder;
+    background: rgb(238, 174, 202);
+    background: -moz-linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 35%);
+    background: -webkit-linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 35%);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 35%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+
+
+}
+
+/* page heading  */
+h2 {
+    text-align: center;
+    padding-bottom: 21px;
+
+
+}
+
+/* main content center */
+.container {
+    height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* userinput content center */
+.contain {
+    margin-top: 101px;
+    padding-left: 21px;
+    color: black;
+    border-radius: 20px;
+    backdrop-filter: 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 30%;
+    height: 60vh;
+
+
+}
+
+
+/* userview class created to put button out for styling purpose */
+
+
+.userView {
+    padding: 21px;
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+    padding-left: 21px;
+
+}
+
+#page1,
+#page2,
+#page3,
+#result {
+    display: block;
+    margin: auto;
+    width: max-content;
+    border-radius: 50px;
+    text-align: center;
+    background-color: black;
+    height: 541px;
+}
+
+/* button  */
+.btn {
+    text-align: center;
+    border-radius: 21px;
+    padding: 21px;
+    margin: 21px;
+    background-color: greenyellow;
+    font-weight: bolder;
+
+
+}
+
+.userView label {
+    text-align: right !important;
+}
+
+#page1 h2,
+input,
+select {
+    margin: 21px;
+}
+
+#page1 input {
+    padding: 11px;
+}
+
+/* hover property */
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(194, 252, 107);
+
+}
+
+/* result text size */
+/* #resultText {
+    font-size: 15px;
+    
+ }  */
+
+.motive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 81px;
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+
+    .contain {
+        width: max-content;
+        height: 60vh;
+    }
+
+    .userView {
+        width: 300px;
+        height: 500px;
+    }
+
+    #page1,
+    #page2,
+    #page3,
+    #result {
+        background-color: black;
+        width: 300px;
+        height: 521px;
+    }
+
+    .btn {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .motive {
+        margin: 51px;
+    }
+}
+
+/* Standard phones */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: green !important;
+        /* Adjust the background color as needed */
+    }
+
+    .contain {
+        width: max-content;
+        height: 60vh;
+    }
+
+    .userView {
+        width: 400px;
+        height: 400px;
+    }
+
+    #page1,
+    #page2,
+    #page3,
+    #result {
+        background-color: black;
+        width: 400px;
+        height: 485px;
+    }
+
+    .btn {
+
+        padding: 15px;
+        margin: 5px;
+
+
+    }
+
+    /* page 3 msg center */
+    .motive {
+        margin: 31px;
+    }
+
+    #resultText {
+        font-size: 15px;
+    }
+
+}
+
+/* Large phones (Phablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: blue !important;
+        /* Adjust the background color as needed */
+    }
+
+    #resultText {
+        font-size: 15px;
+    }
+
+}
+
+/* Small tablets */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    body {
+        background-color: orange !important;
+        /* Adjust the background color as needed */
+    }
+
+    .contain {
+        width: max-content;
+        height: 60vh;
+    }
+
+    .userView {
+        width: 500px;
+        height: 400px;
+    }
+
+    #page1,
+    #page2,
+    #page3,
+    #result {
+        background-color: black;
+        width: 500px;
+        height: 485px;
+    }
+
+    .btn {
+
+        padding: 15px;
+        margin: 5px;
+
+
+    }
+
+    .motive {
+        margin: 71px;
+    }
+
+    #resultText {
+        font-size: 15px;
+    }
+}
+
+/* Standard tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: yellow !important;
+        /* Adjust the background color as needed */
+    }
+
+    .contain {
+        width: max-content;
+        height: 60vh;
+    }
+
+    .userView {
+        width: 500px;
+        height: 400px;
+    }
+
+    #page1,
+    #page2,
+    #page3,
+    #result {
+        background-color: black;
+        width: 500px;
+        height: 485px;
+    }
+
+    .btn {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .motive {
+        margin: 71px;
+    }
+
+
+}
+
+/* Large tablets */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    body {
+        background-color: pink !important;
+        /* Adjust the background color as needed */
+    }
+
+    .contain {
+        width: max-content;
+        height: 60vh;
+    }
+
+    .userView {
+        width: 500px;
+        height: 400px;
+    }
+
+    #page1,
+    #page2,
+    #page3,
+    #result {
+        background-color: black;
+        width: 500px;
+        height: 485px;
+    }
+
+    .btn {
+
+        padding: 15px;
+        margin: 5px;
+
+
+    }
+
+    .motive {
+        margin: 73px;
+    }
+}
