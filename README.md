@@ -30,7 +30,7 @@ Welcome to the 2024 Horoscope Predictor project! 🌌✨ This web application pr
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/2024-horoscope-predictor.git
+    git clone https://github.com/skyblue05/CosmicOracle.git
     ```
 
 2. Open `index.html` in your preferred web browser.
