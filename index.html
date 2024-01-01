@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sure Define</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=6592d25d234534001d7330ba&product=sticky-share-buttons&source=platform"
+        async="async"></script>
+    <script>
+        const translatePopup = document.querySelector('.translate-popup');
+        translatePopup.remove();
+    </script>
 </head>
 
 <body>
     <!-- <p class="para" style="text-align: center;">to 2024</p> -->
+    <div class="sharethis-sticky-share-buttons"></div>
+
     <div class="container">
         <div class="contain">
             <div id="page1">
@@ -61,14 +69,15 @@
                 </div>
                 <button onclick="goToPage2()" class="btn">👈 Back</button>
                 <button onclick="goToPage1()" class="btn">Home 🏠</button>
-                <button onclick="shareResult()" class="btn">Share 🤝</button>
+                <!-- <button onclick="shareResult()" class="btn">Share 🤝</button> -->
                 <p class="ok"></p>
 
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
+
 
 
 </body>
