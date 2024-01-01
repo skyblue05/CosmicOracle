@@ -47,6 +47,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Connect with Me
 
-Feel free to connect with me on [LinkedIn](your-linkedin-profile) for discussions, collaborations, and more!
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/akash-balasaheb-borude/) for discussions, collaborations, and more!
 
 Enjoy exploring the stars with the 2024 Horoscope Predictor! 🚀🌟
