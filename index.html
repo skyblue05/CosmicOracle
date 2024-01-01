@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sure Define</title>
+    <link rel="stylesheet" href="/assets/style.css">
+
+</head>
+
+<body>
+    <!-- <p class="para" style="text-align: center;">to 2024</p> -->
+    <div class="container">
+        <div class="contain">
+            <div id="page1">
+                <div class="userView" onsubmit="return validateForm()">
+                    <h1 style="text-align: center !important;" id="h1">Welcome</h1>
+                    <h2>Basic Info</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Only First Name (eg. Akash)" required>
+                    <br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="number" id="dob" placeholder="Only Date of Birth (eg. 5)" required
+                        pattern="[0-9]{1,2}">
+
+                </div>
+                <button onclick="goToPage2()" class="btn">Next 👉</button>
+            </div>
+
+            <div id="page2" style="display: none;">
+                <div class="userView">
+                    <h2>Future Focus</h2>
+                    <input type="checkbox" id="study"> <label for="study">Study</label><br>
+                    <input type="checkbox" id="health"> <label for="health">Health</label><br>
+                    <input type="checkbox" id="hobbies"> <label for="hobbies">Hobbies</label><br>
+                    <input type="checkbox" id="business"> <label for="business">Business</label><br>
+                    <input type="checkbox" id="job"> <label for="job">Job</label><br>
+                </div>
+                <button onclick="goToPage1()" class="btn">👈 Back</button>
+                <button onclick="goToPage3()" class="btn">Next 👉</button>
+            </div>
+
+            <div id="page3" style="display: none;">
+                <div class="userView">
+                    <div class="motive">
+                        <h2>Things to Keep in Mind</h2>
+                        <h3>Your success and happiness lie in you.</h3>
+                        <p>I'm wishing you the best new year 🥳 & a rich life 😎. May this year be filled with
+                            prosperity for
+                            you! I wish you have 365 days of never-ending joy in 2024 🎉. Cheers to a new year!</p>
+                    </div>
+                </div>
+                <button onclick="goToPage2()" class="btn">👈 Back</button>
+                <button onclick="calculateResult()" class="btn">Submit ✅</button>
+            </div>
+            <div id="result" style="display: none;">
+                <div class="userView">
+                    <h2>Result</h2>
+                    <p id="resultText"></p>
+                </div>
+                <button onclick="goToPage2()" class="btn">👈 Back</button>
+                <button onclick="goToPage1()" class="btn">Home 🏠</button>
+                <button onclick="shareResult()" class="btn">Share 🤝</button>
+                <p class="ok"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+
+
+</body>
+
+</html>
